@@ -2,7 +2,7 @@ import { FaPhone } from 'react-icons/fa6';
 import { BsPersonFill } from 'react-icons/bs';
 import s from './Contact.module.css';
 
-const Contact = ({ id, name, number, deleteContact }) => {
+export default function Contact({ name, number, id }) {
   return (
     <li className={s.container}>
       <div className={s.textwrap}>
@@ -20,6 +20,4 @@ const Contact = ({ id, name, number, deleteContact }) => {
       </button>
     </li>
   );
-};
-
-export default Contact;
+}

@@ -5,7 +5,7 @@ import SearchBox from './SearchBox/SearchBox';
 import ContactList from './ContactList/ContactList';
 import contactData from '../contact.json';
 
-function App() {
+export default function App() {
   const [contacts, setContacts] = useState(() => {
     const savedContacts = localStorage.getItem('contacts');
     return savedContacts ? JSON.parse(savedContacts) : contactData;
@@ -50,5 +50,3 @@ function App() {
     </div>
   );
 }
-
-export default App;

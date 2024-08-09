@@ -3,7 +3,7 @@ import { ErrorMessage, Field, Form, Formik } from 'formik';
 import * as Yup from 'yup';
 import s from './ContactForm.module.css';
 
-const ContactForm = ({ addContact }) => {
+export default function ContactForm({ addContact }) {
   const initialValues = {
     name: '',
     number: '',
@@ -54,6 +54,4 @@ const ContactForm = ({ addContact }) => {
       </Formik>
     </div>
   );
-};
-
-export default ContactForm;
+}
