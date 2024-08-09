@@ -5,7 +5,7 @@ import s from './ContactForm.module.css';
 import { useDispatch } from 'react-redux';
 import { addContact } from '../../redux/contactsSlice';
 
-export default function ContactForm({ addContact }) {
+export default function ContactForm() {
   const initialValues = {
     name: '',
     number: '',
