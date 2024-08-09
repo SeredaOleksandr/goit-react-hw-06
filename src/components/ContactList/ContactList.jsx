@@ -16,15 +16,6 @@ export default function ContactList() {
       {filteredContacts.map(contact => (
         <Contact key={contact.id} {...contact} />
       ))}
-      {/* {filteredContacts.map(({ id, name, number }) => (
-        <Contact
-          key={id}
-          id={id}
-          name={name}
-          number={number}
-          deleteContact={deleteContact}
-        />
-      ))} */}
     </ul>
   );
 }
